@@ -1,0 +1,132 @@
+<Defs>
+
+  <GeneDef>
+    <defName>LK_Evolved_Master_Gene</defName>
+    <label>Evolved Human Master Gene</label>
+    <labelShortAdj>ehmastergene</labelShortAdj>
+    <description>Carriers of this gene can regenerate scars and missing limbs.As well as many other things due to their xenotype.</description>
+    <iconPath>UI/Icons/Genes/Gene_EvoMaster</iconPath>
+    <geneClass>Gene_Healing</geneClass>
+    <displayOrderInCategory>10</displayOrderInCategory>
+   
+    <!--Stat Multiplier adjusters-->
+    <statFactors>
+      <Flammability>0.0</Flammability>
+      <InjuryHealingFactor>3</InjuryHealingFactor>
+      <IncomingDamageFactor>0.5</IncomingDamageFactor>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+      <MoveSpeed>1.5</MoveSpeed>
+      <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+      <MeditationFocusGain>2</MeditationFocusGain>
+      <RestFallRateFactor>0.4</RestFallRateFactor>
+      <PawnTrapSpringChance>0.1</PawnTrapSpringChance>
+      <ResearchSpeed>1.5</ResearchSpeed>
+      <ForagedNutritionPerDay>1.75</ForagedNutritionPerDay>
+      <PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+    </statFactors>
+    <!--More Stat Multiplier Adjusters-->
+    <statOffsets>
+        <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+        <JoyFallRateFactor>-0.1</JoyFallRateFactor>
+        <PawnBeauty>3</PawnBeauty>
+        <ToxicResistance>1</ToxicResistance>
+        <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+        <WorkSpeedGlobal>0.65</WorkSpeedGlobal>
+        <RestRateMultiplier>0.50</RestRateMultiplier>
+        <NegotiationAbility>0.25</NegotiationAbility>
+        <ArrestSuccessChance>0.25</ArrestSuccessChance>
+        <CleaningSpeed>0.55</CleaningSpeed>
+        <MiningYield>0.2</MiningYield>
+        <ConstructionSpeed>0.2</ConstructionSpeed>
+        <MedicalTendSpeed>0.5</MedicalTendSpeed>
+        <MedicalTendQuality>0.5</MedicalTendQuality>
+        <MedicalOperationSpeed>0.5</MedicalOperationSpeed>
+        <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
+        <MedicalPotency>0.5</MedicalPotency>
+        <HuntingStealth>0.5</HuntingStealth>
+    </statOffsets>
+  <!--Immunities-->
+     <hediffGiversCannotGive>
+      <li>Carcinoma</li>
+      <li>HeartAttack</li>
+      <li>BadBack</li>
+      <li>Frail</li>
+      <li>Cataract</li>
+      <li>Dementia</li>
+      <li>Alzheimers</li>
+      <li>Asthma</li>
+      <li>HeartArteryBlockage</li>
+      <li>HearingLoss</li>
+      <li>Cirrhosis</li>
+      <li>BloodLoss</li>
+      <li>ScariaInfection</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">AgonyPulse</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">BloodRage</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CubeInterest</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CubeWithdrawal</li>
+      <li MayRequire="Fenn.floodrace">FloodBuildup</li>
+      <li MayRequire="Fenn.floodrace">FloodInfection</li>
+      <li MayRequire="brrainz.zombieland">ZombieBite</li>
+      <li MayRequire="brrainz.zombieland">ZombieInfection</li>
+      <li MayRequire="brrainz.zombieland">ContaminationEffect</li>
+    </hediffGiversCannotGive>
+    <makeImmuneTo>
+      <li>Flu</li>
+      <li>Malaria</li>
+      <li>SleepingSickness</li>
+      <li>Plague</li>
+      <li>WoundInfection</li>
+      <li>LungRot</li>
+      <li>GutWorms</li>
+      <li>MuscleParasites</li>
+      <li>OrganDecay</li>
+      <li>LungRotExposure</li>
+      <li>FibrousMechanites</li>
+      <li>SensoryMechanites</li>
+    </makeImmuneTo>
+    <exclusionTags>
+    <li>Immunity</li>
+   </exclusionTags>
+   <!--Forced Traits-->
+   <forcedTraits>
+      <li MayRequire="Ludeon.Rimworld.Anomaly">
+        <def>PerfectMemory</def>
+      </li>
+    </forcedTraits>
+    <!--More immunities and Misc bonsuses-->
+    <preventPermanentWounds>true</preventPermanentWounds>
+    <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+    <socialFightChanceFactor>0</socialFightChanceFactor>
+    <aggroMentalBreakSelectionChanceFactor>0</aggroMentalBreakSelectionChanceFactor>
+    <prisonBreakMTBFactor>-1</prisonBreakMTBFactor> <!-- Never prison breaks -->
+    <overdoseChanceFactor>0</overdoseChanceFactor>
+    <immuneToToxGasExposure>true</immuneToToxGasExposure>
+   <waterCellCost>0</waterCellCost>
+    <!--Skill Passion-->
+    <passionMod>
+      <skill>Cooking</skill>
+      <modType>AddOneLevel</modType>
+    </passionMod>
+    <!--Stat Increases-->
+    <!--Aging-->
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(0, 1.5)</li>
+        <li>(20, 1.5)</li>
+        <li>(21, 0.0)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <!--Gene complexity etc-->
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>8</biostatMet>
+    <!--Abilities-->
+     <abilities>
+      <li>ReimplantXenogerm</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>ReimplantXenogerm</AbilityDef>
+    </descriptionHyperlinks>
+  </GeneDef>
+
+  
+</Defs>
