@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>LK_SkillBoost</defName>
+    <commonality>0.50</commonality>
+    <degreeDatas>
+      <li>
+        <label>Evolved Skill Boost</label>
+        <description>[PAWN_nameDef] is naturally talented, [PAWN_pronoun] gets a headstart before everyone else.</description>
+        <skillGains>
+          <Shooting>4</Shooting>
+          <Melee>4</Melee>
+          <Construction>4</Construction>
+          <Mining>4</Mining>
+          <Cooking>4</Cooking>
+          <Plants>4</Plants>
+          <Animals>4</Animals>
+          <Crafting>4</Crafting>
+          <Artistic>4</Artistic>
+          <Medicine>4</Medicine>
+          <Social>4</Social>
+          <Intellectual>4</Intellectual>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li MayRequire="Sierra.RT.GeneralTraits">RT_Incompetent</li>
+    </conflictingTraits>
+  </TraitDef>
+
+  
+
+  
+
+</Defs>

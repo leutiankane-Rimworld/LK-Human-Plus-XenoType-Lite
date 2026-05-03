@@ -1,0 +1,7 @@
+# Changelog for LK Human Plus XenoType Lite
+# Author is LeutianKane
+1.0.1.2 ---Marked as incompatible with LK HumanPlus mod to avoid conflicts.
+1.0.1.1 ---Initial Upload , adds everything the LK Human Plus Xenotype mod adds but more vanilla balanced.
+        
+
+         
